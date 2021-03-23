@@ -1,4 +1,9 @@
-var URL = "https://hernangonzalezmoreno.github.io/experimental/"
+var produccion = false;
+var URL = produccion? 
+"https://hernangonzalezmoreno.github.io/experimental/" :
+"http://127.0.0.1:5500/";
+
+var imgyo = URL + 'imgs/yo.jpeg';
 
 function cargarVista( vista, destino ) {
     var xhttp = new XMLHttpRequest();
@@ -11,4 +16,10 @@ function cargarVista( vista, destino ) {
     xhttp.send();
 }
 
-cargarVista( 'views/navbar.html', 'nb' );
+cargarVista( 'views/navbar.html', 'nav' );
+cargarVista( 'views/sobremi.html', 'sobremi' );
+
+setInterval( function (){
+  var p = document.getElementById( 'puntero' );
+  p.innerHTML = p.innerHTML == ''? '▮' : '';
+}, 500);
