@@ -1,4 +1,4 @@
-var produccion = false;
+var produccion = true;
 var URL = produccion? 
 "https://hernangonzalezmoreno.github.io/experimental/" :
 "http://127.0.0.1:5500/";
@@ -18,6 +18,7 @@ function cargarVista( vista, destino ) {
 
 cargarVista( 'views/navbar.html', 'nav' );
 cargarVista( 'views/sobremi.html', 'sobremi' );
+cargarVista( 'views/trabajos.html', 'trabajos' );
 
 setInterval( function (){
   var p = document.getElementById( 'puntero' );
