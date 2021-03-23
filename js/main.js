@@ -1,4 +1,4 @@
-var URL = "http://hernangonzalezmoreno.github.io/experimental/"
+var URL = "https://hernangonzalezmoreno.github.io/experimental/"
 
 function cargarVista( vista, destino ) {
     var xhttp = new XMLHttpRequest();
