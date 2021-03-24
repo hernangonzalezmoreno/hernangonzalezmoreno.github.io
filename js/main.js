@@ -19,6 +19,7 @@ function cargarVista( vista, destino ) {
 cargarVista( 'views/navbar.html', 'nav' );
 cargarVista( 'views/sobremi.html', 'sobremi' );
 cargarVista( 'views/trabajos.html', 'trabajos' );
+cargarVista( 'views/footer.html', 'footer' );
 
 setInterval( function (){
   var p = document.getElementById( 'puntero' );
