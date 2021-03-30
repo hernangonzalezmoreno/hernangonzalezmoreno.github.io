@@ -1,6 +1,6 @@
 var produccion = true;
 var URL = produccion? 
-"https://hernangonzalezmoreno.github.io/experimental/" :
+"https://hernangonzalezmoreno.github.io/" :
 "http://127.0.0.1:5500/";
 
 var imgyo = URL + 'imgs/yo.jpeg';
